@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>The Apple Store</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: rgb(20, 20, 20);">
+                <img class="apple-icon" src="images/appleicon.jpg" alt="icon">
+                <a class="navbar-brand" href="index.html">The Apple Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                        <li><button type="button" class="btn" data-toggle="modal" data-target="#modal" style="border: 1px solid white;">Sign up</button></li>
+                    </ul>
+                    <form class="form-inline my-2 my-md-1">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div id="controls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#controls" data-slide-to="0" class="active"></li>
+                    <li data-target="#controls" data-slide-to="1"></li>
+                    <li data-target="#controls" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/openlaptop.jpg" alt="laptopontable">
+                        <div class="carousel-caption">
+                            <h5>Luxury Products</h5>
+                            <p>All of our products are made luxurious.</p>
+                            <button type="button" class="btn btn-secondary" style="border: 1px solid white;">View products &rsaquo;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/darklaptop.jpg" alt="laptopback">
+                        <div class="carousel-caption">
+                            <h5>100 million users</h5>
+                            <p>Over 100 million people are using our fine computers.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/codelaptop.jpg" alt="applepack">
+                        <div class="carousel-caption">
+                            <h5>No viruses</h5>
+                            <p>Our security systems will make your computer protected!</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#controls" class="carousel-control-prev arrow" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#controls" class="carousel-control-next arrow" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+        <div class="container text-center">
+            <div class="row">
+                    <div class="col-md-4 item">
+                        <img class="rounded-circle" src="images/macbook.jpg" alt="laptop">
+                        <h2>Top 50 laptops</h2>
+                        <p>Our laptops are hitting the top 50 laptops list!</p>
+                        <p><a class="btn" href="" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4 item">
+                        <img class="rounded-circle" src="images/sideview.jpg" alt="sideview">
+                        <h2>High quality</h2>
+                        <p>Our Macbooks are high quality laptops that you'll like!</p>
+                        <p><a class="btn" href="" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4 item">
+                        <img class="rounded-circle" href="" src="images/workhard.jpg" alt="manatlaptop">
+                        <h2>Over 40 years</h2>
+                        <p>For 43 years our products are thriving.</p>
+                        <p><a class="btn" href="" role="button">View details &raquo;</a></p>
+                    </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign up for the Apple Team!</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="usernameInput">Your username</label>
+                                <input type="text" class="form-control" id="usernameInput" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput">Your email</label>
+                                <input type="text" class="form-control" id="emailInput" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                            <label for="yourAddress"></label>
+                            <textarea class="form-control" id="yourAddress" rows="3" placeholder="Enter your address"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="notif-check" value="option1">
+                            <label class="form-check-label" for="notif-check">Would you like to be notified when we realease new products?</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="premium-check" value="option2">
+                            <label class="form-check-label" for="premium-check">Would you like to sign up with a Premium account?</label>
+                        </div>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container why">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Why choose Apple</h1>
+                        <p>Apple was the first operating system. It was founded on April 1 1976(funny thing that it was founded on April Fools Day). Apple also create the first phones with touch-screen also the first laptops. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque perferendis officiis amet dolore non, esse fuga aliquam blanditiis saepe nisi dolorem dolor, molestias quod fugiat neque similique asperiores repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis, assumenda porro laborum ratione molestias! Aliquam, amet et. Ipsum eveniet sequi labore dolores sint inventore rem atque, deleniti et eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>Top Products</h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h1>Macbook 16 Pro</h1>
+                        <img src="images/onelaptop.jpg" alt="onesinglelaptop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo libero, quam sed sunt reiciendis laborum totam fuga earum sequi, adipisci iure ratione ea blanditiis laudantium rem provident natus aliquam.</p>
+                        <p>Cost: $3000</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>The Apple Pack</h1>
+                        <img src="images/applepack.jpg" alt="applepack">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni esse eaque adipisci ipsa provident odit. Rem neque mollitia ea magni, itaque corporis? Ratione eaque eius sint at modi quaerat mollitia.</p>
+                        <p>Cost: $10000</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Iphone 11 pro</h1>
+                        <img src="images/iphone.jpg" alt="iphone">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia incidunt nemo nulla dolorum porro harum animi? Laboriosam eos autem perspiciatis quod natus rem dolorum. Mollitia nostrum enim at tempora!</p>
+                        <p>Cost: $500</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid bg-dark py-4">
+            <button type="button" class="btn float-right" data-toggle="modal" data-target="#modal" style="border: 1px solid white;">Sign up</button>
+            <p>@Galaxy Wanderer &middot;
+                <a href="">Home &middot;</a>
+                <a href="">Products</a>
+            </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+.col-md-4 > img {
+    width: 140px;
+    height: 140px;
+    margin-top: 50px;
+}
+.apple-icon {
+    width: 50px;
+}
+.btn {
+    background: rgb(50, 50, 50);
+    color: white;
+    transition: 0.1;
+}
+.btn:hover {
+    background: rgb(70, 70, 70);
+    color: white;
+}
+.carousel-item img {
+    width: 100%;
+    height: fit-content;
+}
+.carousel-caption {
+    text-shadow: 1px 3px gray;
+    margin-bottom: 25%;
+}
+.carousel-caption h5 {
+    font-size: 100px;
+}
+.carousel-caption p {
+    font-size: 35px;
+}
+.why {
+    margin-top: 100px;
+}
+main img {
+    width: 350px;
+    height: 350px;
+}
+main .col-md-12 {
+    font-size: 25px;
+    margin: 25px 0px 50px 0px;
+}
+main .col-md-4 img {
+    width: 350px;
+    height: 250px;
+    margin: 0;
+}
+main .col-md-4 h1 {
+    font-size: 30px;
+}
+main .col-md-4 p {
+    font-size: 20px;
+}
+footer {
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
+}
+footer a {
+    color: white;
+} 
+footer a:hover {
+    color: white;
+}
+@media screen and (max-width: 1500px) {
+    .carousel-item img {
+        width: 100%;
+        height: 50%;
+    }
+    .carousel-caption h5 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .carousel-caption {
+        margin-bottom: 5%;
+    }
+    .form-control {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .carousel-caption {
+        margin-bottom: 0;
+    }
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
